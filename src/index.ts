@@ -13,7 +13,10 @@ app.get("/", (req: Request, res: Response) => {
 
 app.get("/test", (req: Request, res: Response) => {
     res.status(200).json({
-        message: "You have successfully deployed your application",
+        message: "Finally deployment and cicd pipelined done!",
+        version: "1.0.0",
+        author: "Nishant",
+        date: new Date().toISOString(),
     });
 });
 
